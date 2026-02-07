@@ -1,0 +1,10 @@
+Total vectors in combined undergrad_rules: 3015
+
+[MISS] 전자공학과 (top source: todo_documents\undergrad_rules\2014\2014학년도 공과대학 교육과정 안내.pdf)
+[MISS] 컴퓨터공학과 (top source: todo_documents\undergrad_rules\2011\2011학년도 공과대학 교육과정 안내.pdf)
+[FOUND] 화학공학과 (top source: todo_documents\undergrad_rules\2011\2011학년도 공과대학 교육과정 안내.pdf)
+[MISS] 기계공학과 (top source: todo_documents\undergrad_rules\2015\2015학년도 공과대학 교육과정 안내.pdf)
+[MISS] 산업공학과 (top source: todo_documents\undergrad_rules\2010\2010학년도 공과대학 교육과정 안내.pdf)
+[MISS] 건축학과 (top source: todo_documents\undergrad_rules\2012\2012학년도 공과대학 교육과정 안내.pdf)
+[MISS] 소프트웨어융합학과 (top source: todo_documents\undergrad_rules\2021\2021학년도 공과대학 교육과정 안내.pdf)
+[FOUND] 정보전자신소재공학과 (top source: todo_documents\undergrad_rules\2019\2019학년도 공과대학 교육과정 안내.pdf)

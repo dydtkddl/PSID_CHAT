@@ -1,0 +1,6 @@
+﻿2020 : 223 lines | EE=True CS=True CH=True ME=True
+2021 : 224 lines | EE=True CS=True CH=True ME=True
+2022 : 142 lines | EE=True CS=False CH=True ME=True
+2023 : 245 lines | EE=True CS=True CH=True ME=True
+2024 : 151 lines | EE=False CS=False CH=True ME=True
+2025 : 255 lines | EE=True CS=True CH=True ME=True

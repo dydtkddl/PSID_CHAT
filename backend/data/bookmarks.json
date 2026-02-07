@@ -1,0 +1,33 @@
+{
+  "admin": [
+    {
+      "id": "da49c0d9-913f-42da-944b-6eabddec635b",
+      "member_id": "admin",
+      "title": "Unknown",
+      "article": "제83조",
+      "uri": null,
+      "category": "regulations",
+      "created_at": "2026-02-04T14:27:24.211909"
+    }
+  ],
+  "guest": [
+    {
+      "id": "2363a6c8-d7a3-4570-8b14-6e27e3237632",
+      "member_id": "guest",
+      "title": "<312E20B1B3C0B0C3BCB0E8B5B5B9D7B1B3C0B0C0CCB3E42C20B1B3C0B0B0FAC1A4BFEEBFB5B0B3BFE42E687770>",
+      "article": null,
+      "uri": null,
+      "category": "undergrad_rules",
+      "created_at": "2026-02-04T18:37:28.555586"
+    },
+    {
+      "id": "881a5a13-a64d-4e3a-b482-5aac8c03ec45",
+      "member_id": "guest",
+      "title": "<312E20B1B3C0B0C3BCB0E8B5B5B9D7B1B3C0B0C0CCB3E42C20B1B3C0B0B0FAC1A4BFEEBFB5B0B3BFE42E687770>",
+      "article": null,
+      "uri": null,
+      "category": "undergrad_rules",
+      "created_at": "2026-02-04T18:37:30.326414"
+    }
+  ]
+}

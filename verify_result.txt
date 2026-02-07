@@ -1,0 +1,35 @@
+=== FAISS Index Sizes ===
+  academic_system                | index.faiss = 0.8 MB
+  grad_rules\2019                | index.faiss = 1.7 MB
+  grad_rules\2025                | index.faiss = 4.5 MB
+  grad_rules                     | index.faiss = 6.3 MB
+  regulations\2022               | index.faiss = 15.0 MB
+  regulations                    | index.faiss = 15.0 MB
+  undergrad_rules\2010           | index.faiss = 2.1 MB
+  undergrad_rules\2011           | index.faiss = 2.1 MB
+  undergrad_rules\2012           | index.faiss = 2.5 MB
+  undergrad_rules\2013           | index.faiss = 2.1 MB
+  undergrad_rules\2014           | index.faiss = 2.2 MB
+  undergrad_rules\2015           | index.faiss = 2.0 MB
+  undergrad_rules\2016           | index.faiss = 1.7 MB
+  undergrad_rules\2017           | index.faiss = 2.6 MB
+  undergrad_rules\2018           | index.faiss = 1.7 MB
+  undergrad_rules\2019           | index.faiss = 1.7 MB
+  undergrad_rules\2020           | index.faiss = 2.6 MB
+  undergrad_rules\2021           | index.faiss = 2.6 MB
+  undergrad_rules\2022           | index.faiss = 1.7 MB
+  undergrad_rules\2023           | index.faiss = 2.9 MB
+  undergrad_rules\2024           | index.faiss = 1.8 MB
+  undergrad_rules\2025           | index.faiss = 3.0 MB
+  undergrad_rules                | index.faiss = 35.3 MB
+
+=== Department Search Test (combined undergrad_rules) ===
+Total vectors: 3015
+
+  [MISS] Electronic Eng           
+  [MISS] Computer Eng             
+  [FOUND] Chemical Eng             
+  [MISS] Mechanical Eng           
+  [MISS] Industrial Eng           
+  [MISS] Architecture             
+  [MISS] Software Convergence     

@@ -1,0 +1,468 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   KyungHee Chatbot V2 - Neo-Renaissance Premium Design System
+   Inspired by the prestigious heritage of Kyung Hee University
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Google Fonts - Elegant Serif for Neo-Renaissance Style
+   ───────────────────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   CSS Variables - Neo-Renaissance Design Tokens
+   ───────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* ══════════════════════════════════════════════════════════════════════════
+     Neo-Renaissance Color Palette
+     ══════════════════════════════════════════════════════════════════════════ */
+  
+  /* Primary: Deep Crimson Red - Heritage & Prestige */
+  --khu-crimson: #AD2235;
+  --khu-crimson-dark: #8B1A2A;
+  --khu-crimson-light: #C93D52;
+  --khu-crimson-pale: rgba(173, 34, 53, 0.08);
+  --khu-crimson-glow: rgba(173, 34, 53, 0.15);
+  
+  /* Secondary: Champagne Gold - Elegance & Achievement */
+  --khu-gold: #CBB779;
+  --khu-gold-dark: #B39F5E;
+  --khu-gold-light: #D9CA96;
+  --khu-gold-pale: rgba(203, 183, 121, 0.15);
+  
+  /* Neutral: Warm White & Soft Gray */
+  --color-bg-canvas: #FAFAF9;
+  --color-bg-primary: #F5F4F2;
+  --color-bg-secondary: #FFFFFF;
+  --color-bg-beige: #F8F6F1;
+  --color-bg-sidebar: var(--khu-crimson);
+  
+  /* Text Colors */
+  --color-text-primary: #2D2D2D;
+  --color-text-secondary: #5C5C5C;
+  --color-text-muted: #8C8C8C;
+  --color-text-inverse: #FFFFFF;
+  --color-text-gold: var(--khu-gold);
+  
+  /* Borders & Shadows */
+  --color-border: #E8E6E1;
+  --color-border-light: #F0EEE9;
+  --color-border-gold: var(--khu-gold);
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.08);
+  --shadow-gold: 0 4px 16px rgba(203, 183, 121, 0.25);
+  --shadow-crimson: 0 4px 16px rgba(173, 34, 53, 0.2);
+
+  /* ══════════════════════════════════════════════════════════════════════════
+     Typography
+     ══════════════════════════════════════════════════════════════════════════ */
+  --font-serif: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
+  --font-sans: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* ══════════════════════════════════════════════════════════════════════════
+     Spacing & Layout
+     ══════════════════════════════════════════════════════════════════════════ */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Sidebar */
+  --sidebar-width: 72px;
+  --sidebar-width-expanded: 200px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Reset & Base Styles
+   ───────────────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-canvas);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Typography - Neo-Renaissance Style
+   ───────────────────────────────────────────────────────────────────────────── */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+  letter-spacing: 0.02em;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.125rem; }
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--khu-crimson);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--khu-crimson-dark);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Buttons - Elegant Style
+   ───────────────────────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: 0.625rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--khu-gold);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary Button - Deep Crimson */
+.btn-primary {
+  background: var(--khu-crimson);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-crimson);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--khu-crimson-dark);
+  box-shadow: var(--shadow-lg), var(--shadow-crimson);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--khu-gold);
+  color: var(--khu-crimson);
+}
+
+/* Ghost Button */
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: var(--khu-crimson-pale);
+  color: var(--khu-crimson);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Form Elements - Refined Style
+   ───────────────────────────────────────────────────────────────────────────── */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input-field:hover {
+  border-color: var(--khu-gold-light);
+}
+
+.input-field:focus {
+  border-color: var(--khu-gold);
+  box-shadow: 0 0 0 3px var(--khu-gold-pale);
+}
+
+/* Select */
+.select-field {
+  appearance: none;
+  width: 100%;
+  padding: 0.625rem 2.5rem 0.625rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--color-text-primary);
+  background: var(--color-bg-secondary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23CBB779' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  outline: none;
+}
+
+.select-field:hover {
+  border-color: var(--khu-gold-light);
+}
+
+.select-field:focus {
+  border-color: var(--khu-gold);
+  box-shadow: 0 0 0 3px var(--khu-gold-pale);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Cards & Containers
+   ───────────────────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-elevated {
+  background: var(--color-bg-secondary);
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Gold Border Card */
+.gold-bordered {
+  border: 1px solid var(--khu-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Chat Bubbles - Distinguished Style
+   ───────────────────────────────────────────────────────────────────────────── */
+.chat-bubble {
+  max-width: 70%;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  line-height: 1.65;
+  animation: messageAppear 0.35s ease-out;
+}
+
+.chat-bubble-user {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--khu-crimson-pale);
+  border-left: 3px solid var(--khu-crimson);
+  margin-left: auto;
+  box-shadow: var(--shadow-md);
+}
+
+.chat-bubble-assistant {
+  background: var(--color-bg-beige);
+  color: var(--color-text-primary);
+  margin-right: auto;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+@keyframes messageAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Loading & Typing Indicator
+   ───────────────────────────────────────────────────────────────────────────── */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--khu-crimson);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: var(--khu-gold);
+  border-radius: 50%;
+  animation: typingPulse 1.4s ease-in-out infinite;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: 0s; }
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingPulse {
+  0%, 60%, 100% { 
+    transform: scale(1); 
+    opacity: 0.4;
+  }
+  30% { 
+    transform: scale(1.3); 
+    opacity: 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Badges
+   ───────────────────────────────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+}
+
+.badge-crimson {
+  background: var(--khu-crimson-pale);
+  color: var(--khu-crimson);
+  border: 1px solid rgba(173, 34, 53, 0.2);
+}
+
+.badge-gold {
+  background: var(--khu-gold-pale);
+  color: var(--khu-gold-dark);
+  border: 1px solid rgba(203, 183, 121, 0.3);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Scrollbar - Elegant Style
+   ───────────────────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--khu-gold-light);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Utilities
+   ───────────────────────────────────────────────────────────────────────────── */
+.font-serif { font-family: var(--font-serif); }
+.font-sans { font-family: var(--font-sans); }
+
+.text-crimson { color: var(--khu-crimson); }
+.text-gold { color: var(--khu-gold); }
+
+.bg-crimson { background: var(--khu-crimson); }
+.bg-gold { background: var(--khu-gold); }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+    --sidebar-width: 0px;
+  }
+}

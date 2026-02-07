@@ -1,0 +1,438 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   LoginPage Styles - Neo-Renaissance Design
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  background: var(--color-bg-canvas);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Pattern */
+.login-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, var(--khu-crimson-glow) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, var(--khu-gold-pale) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Left Panel - Brand Visual
+   ───────────────────────────────────────────────────────────────────────────── */
+.login-brand-panel {
+  flex: 1;
+  display: none;
+  background: linear-gradient(135deg, var(--khu-crimson) 0%, var(--khu-crimson-dark) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-2xl);
+  text-align: center;
+  color: var(--color-text-inverse);
+}
+
+.brand-emblem {
+  width: 140px;
+  height: 140px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.lion-emblem {
+  width: 100%;
+  height: 100%;
+  color: var(--khu-gold);
+}
+
+.brand-headline {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.brand-motto {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--khu-gold);
+  letter-spacing: 0.2em;
+  margin-bottom: var(--spacing-lg);
+}
+
+.brand-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--khu-gold), transparent);
+  margin-bottom: var(--spacing-lg);
+}
+
+.brand-tagline {
+  font-size: 0.9375rem;
+  opacity: 0.85;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.brand-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: var(--spacing-xl);
+}
+
+.deco-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(203, 183, 121, 0.3), transparent);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Right Panel - Login Form
+   ───────────────────────────────────────────────────────────────────────────── */
+.login-form-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  position: relative;
+  z-index: 1;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Logo Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.login-logo-section {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.login-logo {
+  height: 56px;
+  width: auto;
+  margin-bottom: var(--spacing-lg);
+}
+
+.login-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--khu-crimson);
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.02em;
+}
+
+.login-subtitle {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Login Card
+   ───────────────────────────────────────────────────────────────────────────── */
+.login-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-beige);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.about-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--khu-gold-pale);
+  border-radius: var(--radius-full);
+}
+
+.about-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--khu-gold-dark);
+}
+
+.about-content h3 {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--khu-crimson);
+  margin-bottom: var(--spacing-xs);
+}
+
+.about-content ul {
+  list-style: none;
+}
+
+.about-content li {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  padding: 0.125rem 0;
+  padding-left: 0.875rem;
+  position: relative;
+}
+
+.about-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--khu-gold);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Checkbox
+   ───────────────────────────────────────────────────────────────────────────── */
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-secondary);
+  position: relative;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background: var(--khu-crimson);
+  border-color: var(--khu-crimson);
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label:hover .checkbox-custom {
+  border-color: var(--khu-gold);
+}
+
+.checkbox-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Input Group
+   ───────────────────────────────────────────────────────────────────────────── */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.input-label {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--khu-crimson);
+}
+
+.input-group .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.input-group .input-field {
+  padding-left: 2.75rem;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Error Message
+   ───────────────────────────────────────────────────────────────────────────── */
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.875rem;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-md);
+}
+
+.error-message svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Login Button
+   ───────────────────────────────────────────────────────────────────────────── */
+.login-btn {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: var(--spacing-sm);
+}
+
+.login-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-base);
+}
+
+.login-btn:hover:not(:disabled) svg {
+  transform: translateX(4px);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Footer
+   ───────────────────────────────────────────────────────────────────────────── */
+.login-footer {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.footer-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-divider::before,
+.footer-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.footer-divider span {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.lab-link {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--khu-gold-dark);
+  transition: color var(--transition-base);
+}
+
+.lab-link:hover {
+  color: var(--khu-crimson);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Responsive Design
+   ───────────────────────────────────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .login-brand-panel {
+    display: flex;
+  }
+  
+  .login-form-panel {
+    flex: 0 0 520px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-panel {
+    padding: var(--spacing-md);
+  }
+
+  .login-card {
+    padding: var(--spacing-lg);
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content li {
+    padding-left: 0;
+  }
+
+  .about-content li::before {
+    display: none;
+  }
+}

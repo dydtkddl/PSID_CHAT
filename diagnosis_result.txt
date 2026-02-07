@@ -1,0 +1,58 @@
+📂 Loading index from: C:\Users\user\Desktop\20251226_CHATBOT_HyunJong\faiss_db\undergrad_rules\2025
+
+📊 Total documents: 255
+
+📁 Unique sources: 1
+
+🔝 Top 20 sources:
+  [255] todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+
+🌍 Language distribution:
+  Korean:   138 (54.1%)
+  English:   78 (30.6%)
+  Mixed:     39 (15.3%)
+
+⚠️ English document samples (potential issues):
+
+  Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+  Content: Source : 2025학년도 공과대학 교육과정.pdf
+영역 (Distribution Requirement Courses : Cross-disciplinary Thematic Categories) 가. 1영역 : 생명, 우주, 인간(Life, Universe , Man...
+
+  Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+  Content: Source : 2025학년도 공과대학 교육과정.pdf
+with major educational issues of educational administration. Learners in this course understand the way to build learni...
+
+  Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+  Content: Source : 2025학년도 공과대학 교육과정.pdf
+AELTS2015 AELTS4017 ENGLI2007 ENGLI4016 HIST3241 PHIL3059 CF2014 CF3014 CT2006 CT2007 CT2012 CT4006 FN2012 HI1003 HI200...
+
+  Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+  Content: Source : 2025학년도 공과대학 교육과정.pdf
+the non-science majors. This course is the one-semester introductory chemistry course. In this course, the descriptions...
+
+  Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+  Content: Source : 2025학년도 공과대학 교육과정.pdf
+provide a seminar introducing their on-going research and other relevant issues. ∙ 캡스톤디자인1(기계공학) (Capstone Design in Me...
+
+
+🔍 Search test: '전자공학과 졸업요건'
+
+  [1] Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+      Content: Source : 2025학년도 공과대학 교육과정.pdf
+단일전공, 다전공, 부전공을 하고자 하는 학생은 이 시행세칙에서 정하는 바에 따라 교과목을 이수해야 한다. ② 모든 교과목은 [별표1] 교육과정 편성표에 제시된 이수학년과 개설학기에 준해 이수할 것을 권장한다. ③...
+
+  [2] Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+      Content: Source : 2025학년도 공과대학 교육과정.pdf
+and final presentation are conducted, and seminar-based classes are held between the professor in charge and student gr...
+
+  [3] Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+      Content: Source : 2025학년도 공과대학 교육과정.pdf
+and electronic structures of semiconductor materials. Furthermore, based on the provided spectroscopic analysis data se...
+
+  [4] Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+      Content: Source : 2025학년도 공과대학 교육과정.pdf
+파동현상을 다룬다. First part of learning and understanding basic concept of physics and physical thinking concentrating on mec...
+
+  [5] Source: todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+      Content: Source : 2025학년도 공과대학 교육과정.pdf
+학위증에 기재한다. 제7조(타전공과목 인정) 타전공과목은 전공학점으로 인정하지 않는다. 제8조(대학원과목 이수) 3학년까지의 평균 평점이 3.5 이상인 학생은 대학원 학과장의 승인을 받아 학부 학생의 이수가 허용된...

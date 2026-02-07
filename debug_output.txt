@@ -1,0 +1,31 @@
+﻿Loading vector store...
+[FAISS DEBUG] Category: undergrad_rules, Cohort: 2025
+[FAISS DEBUG] Base path: C:\Users\user\Desktop\20251226_CHATBOT_HyunJong\faiss_db\undergrad_rules
+[FAISS DEBUG] Cohort path: C:\Users\user\Desktop\20251226_CHATBOT_HyunJong\faiss_db\undergrad_rules\2025
+[FAISS DEBUG] Cohort index exists: True
+[FAISS DEBUG] Final base: C:\Users\user\Desktop\20251226_CHATBOT_HyunJong\faiss_db\undergrad_rules\2025
+Creating retriever...
+
+Testing search: '전자공학과 졸업요건'
+Got 5 documents
+
+[1] Korean ratio: 84.42%
+    Content: Source : 2025학년도 공과대학 교육과정.pdf
+단일전공, 다전공, 부전공을 하고자 하는 학생은 이 시행세칙에서 정하는 바에 따라 교과목을 이수해야 한다. ② 모든 교과목은...
+
+[2] Korean ratio: 81.99%
+    Content: Source : 2025학년도 공과대학 교육과정.pdf
+학위증에 기재한다. 제7조(타전공과목 인정) 타전공과목은 전공학점으로 인정하지 않는다. 제8조(대학원과목 이수) 3학년까지의...
+
+[3] Korean ratio: 88.89%
+    Content: Source : 2025학년도 공과대학 교육과정.pdf
+첨단 신소재 관련 분야의 학문 발전과 기술 개발에 창의적 이고 주도적인 역할을 할 수 있는 국제적 경쟁력을 갖춘 공학인을 양...
+
+[4] Korean ratio: 79.75%
+    Content: Source : 2025학년도 공과대학 교육과정.pdf
+전공필수 9학점을 포함하여 전공학점 54학점 이상 이수하여야 한다. ④ 전공과목의 선수과목 지정은 [별표2] 선수과목 지정표...
+
+[5] Korean ratio: 79.38%
+    Content: Source : 2025학년도 공과대학 교육과정.pdf
+SW교육 졸업요건 SW교양 또는 SW코딩 교과목에서 총 6학점을 이수하여야 한다(편입생, 순수외국인 및 재직자 특별전형자 제...
+

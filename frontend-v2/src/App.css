@@ -1,0 +1,6 @@
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  background: var(--color-bg-canvas);
+}

@@ -1,0 +1,55 @@
+﻿============================================================
+FAISS DB 내 문서 소스 파일 목록
+============================================================
+  [255 chunks] todo_documents\undergrad_rules\2025학년도 공과대학 교육과정.pdf
+
+============================================================
+학과별 검색 테스트 (raw FAISS, top 3)
+============================================================
+
+>> Query: 전자공학과 졸업요건
+  [1] [MISS] Source : 2025학년도 공과대학 교육과정.pdf 단일전공, 다전공, 부전공을 하고자 하는 학생은 이 시행세칙에서 정하는 바에 따라 교과목을 이수해야 한다. ② 모든 교과목은 [별표1] 교육과정 편성표에 제시된 이수학년과 개설학기에 준해 이수할 것을 권장한다. ③...
+  [2] [MISS] Source : 2025학년도 공과대학 교육과정.pdf and final presentation are conducted, and seminar-based classes are held between the professor in charge and student gr...
+  [3] [MISS] Source : 2025학년도 공과대학 교육과정.pdf and electronic structures of semiconductor materials. Furthermore, based on the provided spectroscopic analysis data se...
+
+>> Query: 컴퓨터공학과 졸업요건
+  [1] [MISS] Source : 2025학년도 공과대학 교육과정.pdf SW교육 졸업요건 SW교양 또는 SW코딩 교과목에서 총 6학점을 이수하여야 한다(편입생, 순수외국인 및 재직자 특별전형자 제외). SW교양 및 SW코딩 교과목 개설 및 운영에 관한 세부사항은 소프트웨어교육교과운영시...
+  [2] [MISS] Source : 2025학년도 공과대학 교육과정.pdf 단일전공, 다전공, 부전공을 하고자 하는 학생은 이 시행세칙에서 정하는 바에 따라 교과목을 이수해야 한다. ② 모든 교과목은 [별표1] 교육과정 편성표에 제시된 이수학년과 개설학기에 준해 이수할 것을 권장한다. ③...
+  [3] [MISS] Source : 2025학년도 공과대학 교육과정.pdf 전공필수 9학점을 포함하여 전공학점 54학점 이상 이수하여야 한다. ④ 전공과목의 선수과목 지정은 [별표2] 선수과목 지정표와 같으며 선·후수과목의 체계를 준수하여 이수하여야 한다. 제6조(부전공이수학점) ① 기계...
+
+>> Query: 화학공학과 졸업요건
+python : Traceback (mo
+st recent call last):
+위치 줄:1 문자:1
++ python diagnose_depa
+rtments.py 2>&1 | Out-
+File -Encoding UTF8 de
+pt_di ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Traceback    
+ (most recent call    
+ last)::String) [    ]
+, RemoteExceptio    n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  File "C:\Users\user\
+Desktop\20251226_CHATB
+OT_HyunJong\diagnose_d
+epartments.py", line 5
+4, in <module>
+    print(f"  [{i+1}] 
+[{marker}] {content_pr
+eview}...")
+    ~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+UnicodeEncodeError: 'c
+p949' codec can't enco
+de character '\u2219' 
+in position 81: illega
+l multibyte sequence
